@@ -287,6 +287,22 @@ values ('01', 50, 50, 50, 1000, 'Leather'),
        ('06', 100, 500, 100, 2500, 'Novice Robes'),
        ('07', 250, 1000, 250, 7500, 'Master Robes'),
        ('10', 1000, 500, 1000, 100000, 'Dragon');
+       
+insert into WEAPON
+values ('01', 50, 0, 'Sword', 'Iron Sword', 1000),
+       ('02', 50, 0, 'Dagger', 'Iron Dagger', 1000),
+       ('03', 50, 0, 'Longsword', 'Iron Longsword', 1000),
+       ('04', 150, 50, 'Sword', 'Steel Sword', 2500),
+       ('05', 125, 75, 'Dagger', 'Steel Dagger', 2500),
+       ('06', 200, 0, 'Longsword', 'Steel Longsword', 2250),
+       ('07', 150, 150, 'Sword', 'Glass Sword', 5000),
+       ('08', 200, 100, 'Dagger', 'Glass Dagger', 5000),
+       ('09', 300, 0, 'Longsword', 'Glass Longsword', 5000),
+       ('10', 500, 250, 'Sword', 'Dragon Longsword', 100000),
+       ('11', 0, 100, 'Wand', 'Novice Wand', 2500),
+       ('12', 0, 500, 'Wand', 'Master Wand', 7500),
+       ('13', 0, 100, 'Staff', 'Novice Staff', 2500),
+       ('14', 0, 500, 'Staff', 'Master Staff', 7500);
 
 insert into PLAYER_CHARACTER
 values ('GoodEmail@domain.com', 'GoodGuyJohn', 'Warrior', 40000, 1000, 500, 10, 50000, '020:00:00', 'Skyrim'),

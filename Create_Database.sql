@@ -350,3 +350,13 @@ values ('1', 'The Search', 200, 1, 900, '02', 'BasicHeal', 'Collect'),
        ('4', 'The Path Least Traveled', 750, 12, 4000, '07', 'GenericMagicBuff', 'Slay'),
        ('5', 'Finding Flowers', 1000, 26, 10000, '10', 'FullHeal', 'Collect'),
        ('6', 'Dragons Heart', 4000, 49, 25000, '08', 'PermStrengthBuff', 'Collect');
+
+insert into NPC
+values ('01', 'Mark Jackson', 'Quest'),
+       ('02', 'Steve Kerr', 'Quest'),
+       ('03', 'D'arci Stern', 'Quest'),
+       ('04', 'James Jones', 'Quest'),
+       ('05', 'Jerry Jones', 'Quest'),
+       ('06', 'Jeremy Collins', 'Quest'),
+       ('07', 'Denice Smith', 'Quest'),
+       ('08', 'Natalie Anderson', 'Quest');

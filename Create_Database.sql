@@ -277,6 +277,16 @@ values ('GoodEmail@domain.com', 'John', 'Doe', '020:00:00', 1),
        ('GenericEmail@live.com', 'Generic', 'Person', '123:45:43', 2),
        ('Noob123@gmail.com', 'Noob', 'Saibot', '000:01:00', 1),
        ('AveragePlayer@hotmail.com', 'Reggy', null, '040:00:00', 2);
+       
+insert into ARMOR 
+values ('01', 50, 50, 50, 1000, 'Leather'),
+       ('02', 100, 100, 100, 2500, 'Iron'),
+       ('03', 250, 250, 250, 5000, 'Steel'),
+       ('04', 500, 250, 500, 7500, 'Glass'),
+       ('05', 1000, 250, 1000, 10000, 'Daedric'),
+       ('06', 100, 500, 100, 2500, 'Novice Robes'),
+       ('07', 250, 1000, 250, 7500, 'Master Robes'),
+       ('10', 1000, 500, 1000, 100000, 'Dragon');
 
 insert into PLAYER_CHARACTER
 values ('GoodEmail@domain.com', 'GoodGuyJohn', 'Warrior', 40000, 1000, 500, 10, 50000, '020:00:00', 'Skyrim'),

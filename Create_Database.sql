@@ -304,6 +304,18 @@ values ('01', 50, 0, 'Sword', 'Iron Sword', 1000),
        ('13', 0, 100, 'Staff', 'Novice Staff', 2500),
        ('14', 0, 500, 'Staff', 'Master Staff', 7500);
 
+insert into MOB
+values ('01', 'Goblin', 30, 10, 45, 'BasicHeal'),
+       ('02', 'Spider', 45, 12, 50, 'BasicHeal'),
+       ('03', 'Bear', 500, 79, 150, 'BasicHeal'),
+       ('04', 'Trool', 700, 110, 200, 'BetterHeal'),
+       ('05', 'Ice Troll', 115, 12, 200, 'BetterHeal'),
+       ('06', 'Skeleton', 200, 30, 75, 'EvenBetterHeal'),
+       ('07', 'Wolf', 300, 50, 100, 'BasicHeal'),
+       ('08', 'Dragon', 10000, 2000, 3000, 'PermStrengthBuff'),
+       ('09', 'Bat', 100, 30, 75, 'BasicHeal'),
+       ('10', 'Witch', 5000, 1000, 2500, 'PermStrengthBuff');
+       
 insert into PLAYER_CHARACTER
 values ('GoodEmail@domain.com', 'GoodGuyJohn', 'Warrior', 40000, 1000, 500, 10, 50000, '020:00:00', 'Skyrim'),
        ('SomePerson@yahoo.com', 'FirstCharacterEver', 'Warrior', 100000, 4000, 1200, 50, 200000, '050:00:00', 'Oblivion'),

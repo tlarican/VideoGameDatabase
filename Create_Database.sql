@@ -342,3 +342,11 @@ values ('BasicHeal', 'A health potion created by a novice alchemist. It barely h
        ('StrongStrengthBuff', 'A strong magic potion developed by Grand Scholars. It grants you a considerate buff to strength.', null, 400, null, '000:20:00', 2000),
        ('PermStrengthBuff', 'An extremely rare magic potion found by defeating only the most legendary of monsters. It grants you a permanent increase to strength at the cost of magika.', null, 100, -50, null, null),
        ('FailedPotion', 'A potion with not so compatible ingredients. Something tells you it would not be a good idea to consume this.', -100, -30, -30, '000:05:00', null);
+
+insert into QUEST
+values ('1', 'The Search', 200, 1, 900, '02', 'BasicHeal', 'Collect'),
+       ('2', 'First Hunt', 200, 3, 1500, '03', 'PermMagicBuff', 'Slay'),
+       ('3', 'Save The Armory', 250, 7, 2250, '04', 'EvenBetterHeal', 'Slay'),
+       ('4', 'The Path Least Traveled', 750, 12, 4000, '07', 'GenericMagicBuff', 'Slay'),
+       ('5', 'Finding Flowers', 1000, 26, 10000, '10', 'FullHeal', 'Collect'),
+       ('6', 'Dragons Heart', 4000, 49, 25000, '08', 'PermStrengthBuff', 'Collect');

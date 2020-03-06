@@ -303,6 +303,21 @@ values ('01', 50, 0, 'Sword', 'Iron Sword', 1000),
        ('12', 0, 500, 'Wand', 'Master Wand', 7500),
        ('13', 0, 100, 'Staff', 'Novice Staff', 2500),
        ('14', 0, 500, 'Staff', 'Master Staff', 7500);
+       
+insert into CONSUMABLE
+values ('BasicHeal', 'A health potion created by a novice alchemist. It barely heals you', 50, null, null, null, 10),
+       ('BetterHeal', 'A health potion created from common ingredients. It heals you a moderate amount.', 200, null, null, null, 100),
+       ('EvenBetterHeal', 'A health potion available to only the most veteran adventurers. It heals you a significant amount.', 1000, null, null, null, 1000),
+       ('FullHeal', 'An extremely rare health potion that is said to be able to regenerate limbs. It fully heals you.', 2147483647, null, null, null, 50000),
+       ('BasicMagicBuff', 'A magic potion made from cheap ingredients. It slightly increases your magika.', null, null, 20, '000:10:00', 20),
+       ('GenericMagicBuff', 'A magic potion found at any general store. It grants you a decent buff to magika.', null, null, 100, '000:15:00', 200),
+       ('StrongMagicBuff', 'A strong magic potion developed by Grand Scholars. It grants you a considerate buff to magika.', null, null, 400, '000:20:00', 2000),
+       ('PermMagicBuff', 'An extremely rare magic potion found by defeating only the most legendary of monsters. It grants you a permanent increase to magika at the cost of strength.', null, -50, 100, null, null),
+       ('BasicStrengthBuff', 'A magic potion made from cheap ingredients. It slightly increases your strength.', null, 20, null, '000:10:00', 20),
+       ('GenericStrengthBuff', 'A magic potion made found at any general store. It grants you a decent buff to strength', null, 100, null, '000:15:00', 200),
+       ('StrongStrengthBuff', 'A strong magic potion developed by Grand Scholars. It grants you a considerate buff to strength.', null, 400, null, '000:20:00', 2000),
+       ('PermStrengthBuff', 'An extremely rare magic potion found by defeating only the most legendary of monsters. It grants you a permanent increase to strength at the cost of magika.', null, 100, -50, null, null),
+       ('FailedPotion', 'A potion with not so compatible ingredients. Something tells you it would not be a good idea to consume this.', -100, -30, -30, '000:05:00', null);
 
 insert into MOB
 values ('01', 'Goblin', 30, 10, 45, 'BasicHeal'),
@@ -315,7 +330,19 @@ values ('01', 'Goblin', 30, 10, 45, 'BasicHeal'),
        ('08', 'Dragon', 10000, 2000, 3000, 'PermStrengthBuff'),
        ('09', 'Bat', 100, 30, 75, 'BasicHeal'),
        ('10', 'Witch', 5000, 1000, 2500, 'PermStrengthBuff');
-       
+  
+insert into PLAYER_CHARACTER
+values ('GoodEmail@domain.com', 'GoodGuyJohn', 'Warrior', 40000, 1000, 500, 10, 50000, '020:00:00', 'Skyrim'),
+       ('SomePerson@yahoo.com', 'FirstCharacterEver', 'Warrior', 100000, 4000, 1200, 50, 200000, '050:00:00', 'Oblivion'),
+       ('SomePerson@yahoo.com', 'WizardyGuy', 'Mage', 50000, 900, 40, 700, 70000, '030:00:00', 'Hammerfell'),
+       ('SomePerson@yahoo.com', 'PickpocketPolly', 'Thief', 40000, 900, 300, 100, 60000, '019:00:00', 'Skyrim'),
+       ('SomePerson@yahoo.com', 'NoobGuysFriend', 'Warrior', 0, 200, 20, 1, default, '001:00:00', 'Cyrodiil'),
+       ('GenericEmail@live.com', 'YourCarry', 'Mage', 200000, 2000, 50, 1500, 1000000, '123:40:00', 'Oblivion'),
+       ('GenericEmail@live.com', 'Throwaway123', 'Thief', 100, 150, 15, 5, 200, '000:05:43', 'Cyrodiil'),
+       ('Noob123@gmail.com', 'NoobGuy', 'Thief', 0, 150, 15, 5, 100, '000:01:00', 'Cyrodiil'),
+       ('AveragePlayer@hotmail.com', 'AverageMage', 'Mage',20000, 300, 10, 300, 10000, '020:00:00', 'Morrowind'),
+       ('AveragePlayer@hotmail.com', 'AverageThief', 'Thief', 20000, 400, 200, 50, 40000, '020:00:00', 'Morrowind');
+  
 insert into CHAR_ARMOR
 values ('SomePerson@yahoo.com', 'FirstCharacterEver', '05'),
        ('SomePerson@yahoo.com', 'WizardyGuy', '06'),
@@ -332,33 +359,6 @@ values ('SomePerson@yahoo.com', 'FirstCharacterEver', '01'),
        ('AveragePlayer@hotmail.com', 'AverageMage', '13'),
        ('SomePerson@yahoo.com', 'NoobGuysFriend', '06'),
        ('GoodEmail@domain.com', 'GoodGuyJohn', '09');
-
-insert into PLAYER_CHARACTER
-values ('GoodEmail@domain.com', 'GoodGuyJohn', 'Warrior', 40000, 1000, 500, 10, 50000, '020:00:00', 'Skyrim'),
-       ('SomePerson@yahoo.com', 'FirstCharacterEver', 'Warrior', 100000, 4000, 1200, 50, 200000, '050:00:00', 'Oblivion'),
-       ('SomePerson@yahoo.com', 'WizardyGuy', 'Mage', 50000, 900, 40, 700, 70000, '030:00:00', 'Hammerfell'),
-       ('SomePerson@yahoo.com', 'PickpocketPolly', 'Thief', 40000, 900, 300, 100, 60000, '019:00:00', 'Skyrim'),
-       ('SomePerson@yahoo.com', 'NoobGuysFriend', 'Warrior', 0, 200, 20, 1, default, '001:00:00', 'Cyrodiil'),
-       ('GenericEmail@live.com', 'YourCarry', 'Mage', 200000, 2000, 50, 1500, 1000000, '123:40:00', 'Oblivion'),
-       ('GenericEmail@live.com', 'Throwaway123', 'Thief', 100, 150, 15, 5, 200, '000:05:43', 'Cyrodiil'),
-       ('Noob123@gmail.com', 'NoobGuy', 'Thief', 0, 150, 15, 5, 100, '000:01:00', 'Cyrodiil'),
-       ('AveragePlayer@hotmail.com', 'AverageMage', 'Mage',20000, 300, 10, 300, 10000, '020:00:00', 'Morrowind'),
-       ('AveragePlayer@hotmail.com', 'AverageThief', 'Thief', 20000, 400, 200, 50, 40000, '020:00:00', 'Morrowind');
-
-insert into CONSUMABLE
-values ('BasicHeal', 'A health potion created by a novice alchemist. It barely heals you', 50, null, null, null, 10),
-       ('BetterHeal', 'A health potion created from common ingredients. It heals you a moderate amount.', 200, null, null, null, 100),
-       ('EvenBetterHeal', 'A health potion available to only the most veteran adventurers. It heals you a significant amount.', 1000, null, null, null, 1000),
-       ('FullHeal', 'An extremely rare health potion that is said to be able to regenerate limbs. It fully heals you.', 2147483647, null, null, null, 50000),
-       ('BasicMagicBuff', 'A magic potion made from cheap ingredients. It slightly increases your magika.', null, null, 20, '000:10:00', 20),
-       ('GenericMagicBuff', 'A magic potion found at any general store. It grants you a decent buff to magika.', null, null, 100, '000:15:00', 200),
-       ('StrongMagicBuff', 'A strong magic potion developed by Grand Scholars. It grants you a considerate buff to magika.', null, null, 400, '000:20:00', 2000),
-       ('PermMagicBuff', 'An extremely rare magic potion found by defeating only the most legendary of monsters. It grants you a permanent increase to magika at the cost of strength.', null, -50, 100, null, null),
-       ('BasicStrengthBuff', 'A magic potion made from cheap ingredients. It slightly increases your strength.', null, 20, null, '000:10:00', 20),
-       ('GenericStrengthBuff', 'A magic potion made found at any general store. It grants you a decent buff to strength', null, 100, null, '000:15:00', 200),
-       ('StrongStrengthBuff', 'A strong magic potion developed by Grand Scholars. It grants you a considerate buff to strength.', null, 400, null, '000:20:00', 2000),
-       ('PermStrengthBuff', 'An extremely rare magic potion found by defeating only the most legendary of monsters. It grants you a permanent increase to strength at the cost of magika.', null, 100, -50, null, null),
-       ('FailedPotion', 'A potion with not so compatible ingredients. Something tells you it would not be a good idea to consume this.', -100, -30, -30, '000:05:00', null);
 
 insert into QUEST
 values ('1', 'The Search', 200, 1, 900, '02', 'BasicHeal', 'Collect'),

@@ -354,7 +354,7 @@ values ('1', 'The Search', 200, 1, 900, '02', 'BasicHeal', 'Collect'),
 insert into NPC
 values ('01', 'Mark Jackson', 'Quest'),
        ('02', 'Steve Kerr', 'Quest'),
-       ('03', 'D'arci Stern', 'Quest'),
+       ('03', 'Darci Stern', 'Quest'),
        ('04', 'James Jones', 'Quest'),
        ('05', 'Jerry Jones', 'Quest'),
        ('06', 'Jeremy Collins', 'Quest'),

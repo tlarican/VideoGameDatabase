@@ -316,6 +316,23 @@ values ('01', 'Goblin', 30, 10, 45, 'BasicHeal'),
        ('09', 'Bat', 100, 30, 75, 'BasicHeal'),
        ('10', 'Witch', 5000, 1000, 2500, 'PermStrengthBuff');
        
+insert into CHAR_ARMOR
+values ('SomePerson@yahoo.com', 'FirstCharacterEver', '05'),
+       ('SomePerson@yahoo.com', 'WizardyGuy', '06'),
+       ('GenericEmail@live.com', 'YourCarry', '07'),
+       ('Noob123@gmail.com', 'NoobGuy', '01'),
+       ('AveragePlayer@hotmail.com', 'AverageThief', '05');
+
+insert into CHAR_WEAPON
+values ('SomePerson@yahoo.com', 'FirstCharacterEver', '01'),
+       ('SomePerson@yahoo.com', 'WizardyGuy', '11'),
+       ('GenericEmail@live.com', 'YourCarry', '12'),
+       ('Noob123@gmail.com', 'NoobGuy', '02'),
+       ('AveragePlayer@hotmail.com', 'AverageThief', '08'),
+       ('AveragePlayer@hotmail.com', 'AverageMage', '13'),
+       ('SomePerson@yahoo.com', 'NoobGuysFriend', '06'),
+       ('GoodEmail@domain.com', 'GoodGuyJohn', '09');
+
 insert into PLAYER_CHARACTER
 values ('GoodEmail@domain.com', 'GoodGuyJohn', 'Warrior', 40000, 1000, 500, 10, 50000, '020:00:00', 'Skyrim'),
        ('SomePerson@yahoo.com', 'FirstCharacterEver', 'Warrior', 100000, 4000, 1200, 50, 200000, '050:00:00', 'Oblivion'),

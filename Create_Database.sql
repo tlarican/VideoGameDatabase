@@ -57,7 +57,7 @@ drop table if exists KILL_COUNTER;
 
 create table ACCOUNT
 (
-	Email varchar(50) not null check (Email like '%_@__%.__%'),
+	Email varchar(50) not null,
 	First_Name varchar(15) not null,
 	Last_Name varchar(15) null,
 	Time_Played time default '000:00:00' not null,

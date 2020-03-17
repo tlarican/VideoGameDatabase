@@ -2,7 +2,7 @@
 # https://askubuntu.com/questions/70883/how-do-i-install-python-pandas
 # https://datascience-enthusiast.com/R/AWS_RDS_R_Python.html
 
-# Dependencies:
+# Dependencies / Getting Started:
 #
 # For Linux (bash):
 # sudo install python
